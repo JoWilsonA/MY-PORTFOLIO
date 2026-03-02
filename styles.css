@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    max-width: 580px;
+    margin: auto;
+    background-color: #020b31;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex: 1 1 auto;
+    gap: 10px;
+    justify-content: right;
+    background-color: #040020;
+    position: sticky;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    vertical-align: top;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 200ms;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 300ms;
+}
+
+.navHeader {
+    position: relative;
+    margin-right: 2%;
+}
+
+.navHeader:hover {
+    color: #6770b1;
+}
+
+.navHeader::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aliceblue;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 300ms ease-in-out;
+}
+
+.navHeader:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+header img {
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: smaller;
+    position: abs;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+#heroSection {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#heroSection #author {
+    margin-left: auto;
+    margin-top: 20%;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 900;
+    font-size: 2.6em;
+    font-style: normal;
+    color: #020b31;
+}
+
+#heroSection img {
+    width: 145px;
+    margin: auto;
+    filter: drop-shadow(8px 8px 8px rgb(122, 122, 115));
+}
+
+#author a {
+    text-decoration: none;
+}
+
+#authorBtn {
+    margin-top: 30%;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#author h4 {
+    opacity: 0.9;
+}
+
+#viewProjectsBtn a {
+    color: whitesmoke;
+}
+
+#viewProjectsBtn {
+    padding: 6px;
+    border: 1px solid rgb(6, 4, 37);
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: rgb(6, 4, 37);
+    cursor: pointer;
+    transition: 250ms;
+    text-decoration: none;
+}
+
+#viewProjectsBtn:hover {
+    box-shadow: 1px 2px 5px 1px rgb(6, 4, 37);
+}
+
+#viewProjectsBtn:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#downloadCV a {
+    color: rgb(6, 4, 37);
+}
+
+#downloadCV {
+    padding: 5px;
+    border: 1px solid rgb(6, 4, 37);
+    border-radius: 4px;
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 150ms;
+    margin-left: 6px;
+}
+
+#downloadCV:hover {
+    box-shadow: 1px 2px 5px 1px #00000057;
+}
+
+#downloadCV:active {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#aboutSection {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin: auto;
+    max-width: 700px;
+}
+
+#aboutSection h2 {
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+#aboutSection p {
+    text-align: justify;
+}
+
+#education h2 {
+    margin-bottom: 20px;
+}
+
+details {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #040020;
+    background-color: #020b31;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+details:hover {
+    transform: translateY(-2px);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+details p {
+    margin: 5px 0 0 15px;
+}
+
+#skillsSection {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 10%;
+}
+
+#techSkills {
+    vertical-align: top;
+}
+
+#softSkills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+    margin-bottom: 15%;
+    gap: 5px;
+}
+
+.sk {
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+    padding: 4px;
+    flex: 1 1 45%;
+    text-align: center;
+    align-content: center;
+}
+
+#projectSection {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15%;
+    max-width: 700px;
+
+}
+
+#listOfProjects {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.project {
+    flex: 1 1 auto;
+    padding: 5px;
+    border: none;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #040020;
+    cursor: pointer;
+    border: 1px solid rgba(13, 4, 63, 0.438);
+    transition: 350ms;
+}
+
+.project:hover {
+    border: none;
+    box-shadow: 1px 2px 3px 1px rgba(21, 7, 77, 0.705);
+    transform: scale3d(1.05, 1, 1);
+}
+
+.project:active {
+    scale: 1.06;
+}
+
+.project a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.project a:visited {
+    color: yellow;
+}
+
+#contactSection {
+    /* background: linear-gradient(rgb(147, 126, 241) 20%, rgb(74, 55, 128) 5%, rgb(62, 108, 233) 75% );*/
+    background: linear-gradient(-35deg, #020b31, #40456e, #d4d5e7);
+    margin-top: 15%;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 25px 25px 0 0;
+}
+
+#contactSection h2 {
+    color: #040020;
+    margin: 20px;
+}
+
+#contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#emailContact {
+    background-color: #040020;
+    color: whitesmoke;
+    padding: 15px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    flex: 1 1 auto;
+    border-radius: 15px 15px 0 0;
+}
+
+#emailContact textarea {
+    width: 260px;
+    padding: 5px;
+    flex: 1 1 auto;
+}
+
+#contactSection input {
+    max-width: 250px;
+    height: 25px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#sendMessageBtn {
+    background-color: rgb(73, 24, 252);
+    color: aliceblue;
+    padding: 5px 6px;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    margin: 20px 8px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#sendMessageBtn:hover {
+    color: rgb(73, 24, 252);
+    background-color: aliceblue;
+}
+
+#sendMessageBtn:active {
+    background-color: rgb(73, 24, 252);
+    color: aliceblue;
+}
+
+#otherContacts {
+    flex: 1 1 auto;
+    width: 50%;
+    text-align: justify;
+    align-items: baseline;
+    vertical-align: top;
+}
+
+.contact a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: aliceblue;
+    transition: 200ms;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact a:visited {
+    color: yellow;
+}
+
+footer {
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    padding: 5px;
+}
